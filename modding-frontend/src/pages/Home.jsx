@@ -1,13 +1,7 @@
 import { useEffect, useState } from "react";
 import { getMods } from "../api";
 import ModCard from "../components/ModCard";
-import { getMods, getMod, addMod } from "../api";
 
-useEffect(() => {
-  getMods()
-    .then((res) => console.log(res.data))
-    .catch((err) => console.error(err));
-}, []);
 
 
 export default function Home() {
